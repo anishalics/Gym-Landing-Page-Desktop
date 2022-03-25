@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            padding: 0;
+            margin: 0;
+            background: url('bg.jpg');
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 15px; 
+            top: 12px;
+        }
+        .left img{
+            width: 120px;
+            margin-left: 8px;
+            padding: 0;
+            filter: invert(100%);
+        }
+        .left div{
+            line-height: 5px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .center{
+            /* border: 2px solid green; */
+            width: 600px;
+            margin: 20px auto;
+        }
+        .right{
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            top: 20px;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 5px 20px;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+        .navbar ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar ul li a:hover, .navbar ul li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+        .btn{
+            margin: 0 8px;
+            padding: 5px 8px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border: 2px solid rgb(49, 45, 45);
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        .btn:hover{
+            background-color: rgb(32, 31, 31);
+        }
+        .container{
+            margin: 60px 40px;
+            padding: 30px 30px;
+            border: 2px solid white;
+            width: 40%;
+            border-radius: 15px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .form-element input{
+            border: 2px solid black;
+            text-align: center;
+            width: 475px;
+            display: block;
+            margin: 5px auto;
+            padding: 15px 10px;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        .container .btn{
+            display: block;
+            width: 85px;
+            margin: auto;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Antonio Fitness</div>
+        </div>
+        <div class="center">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym of Kapilvastu</h1>
+        <form action="noaction.php">
+            <div class="form-element">
+                <input type="name" placeholder="Enter your name">
+            </div>
+            <div class="form-element">
+                <input type="number" placeholder="Enter your age">
+            </div>
+            <div class="form-element">
+                <input type="email" placeholder="Enter your email id">
+            </div>
+            <div class="form-element">
+                <input type="email" placeholder="Enter your phone no">
+            </div>
+            <div class="form-element">
+                <input type="name" placeholder="Enter your address">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
